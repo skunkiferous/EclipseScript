@@ -1,0 +1,12 @@
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://types.cs.washington.edu/checker-framework/eclipse ^
+-installIU checkers.eclipse.feature.feature.group ^
+-tag checkers %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4%
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://download.eclipse.org/releases/juno,^
+http://download.eclipse.org/rt/riena/4.0.0.0/update ^
+-installIU org.eclipse.riena.build.feature.core.sdk.feature.group,^
+org.eclipse.riena.build.feature.samples.sdk.feature.group,^
+org.eclipse.riena.build.feature.sdk.feature.group ^
+-tag riena %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4%

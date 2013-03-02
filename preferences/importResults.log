@@ -1,0 +1,245 @@
+*** CodePro rule set importer ***
+
+Message: Please note that this importer is in the early stages of development.
+If you see ways that it could be improved upon, please contact CodePro support.
+Some PMD and Findbugs rules may not be implemented in CodePro yet.
+If there are particular rules you would like us to implement, please contact us and let us know.
+
+Imported files:
+	inclusive 	PMD ruleset file 	C:\work\workspace\PaintedBoxes6\eclipse_script\exported_preferences\PMD.xml
+Import problems:
+Successful imports:
+	AbstractClassWithoutAbstractMethod ==> No Abstract Methods
+	AddEmptyString ==> Don't use concatenation to convert to String
+	AppendCharacterWithChar ==> Append String
+	ArrayIsStoredDirectly ==> Mutability Of Arrays
+	AssignmentInOperand ==> Assignment In Condition
+	AssignmentToNonFinalStatic ==> Assignment to Non-final Static
+	AvoidAccessibilityAlteration ==> Reflection Method Usage, Use Privileged Code Sparingly
+	AvoidArrayLoops ==> Use arraycopy() Rather Than a Loop
+	AvoidAssertAsIdentifier ==> Avoid Future Keywords
+	AvoidCallingFinalize ==> Explicit Invocation of Finalize
+	AvoidCatchingNPE ==> Caught Exceptions
+	AvoidCatchingThrowable ==> Caught Exceptions
+	AvoidConstantsInterface ==> Use Interfaces Only to Define Types
+	AvoidDeeplyNestedIfStmts ==> Block Depth
+	AvoidDollarSigns ==> Annotation Type Naming Convention, Class Naming Convention, Constant Field Naming Convention, Enumerated Type Naming Convention, Enumeration Constant Naming Convention, Exception Parameter Naming Convention, Instance Field Naming Convention, Interface Naming Convention, Label Naming Convention, Local Variable Naming Convention, Method Naming Convention, Method Parameter Naming Convention, Package Naming Convention, Static Field Naming Convention, Type Parameter Naming Convention
+	AvoidEnumAsIdentifier ==> Avoid Future Keywords
+	AvoidInstanceofChecksInCatchClause ==> Use of instanceof in Catch Block
+	AvoidInstantiatingObjectsInLoops ==> Avoid Instantiation in Loops
+	AvoidPrintStackTrace ==> Debugging Code
+	AvoidProtectedFieldInFinalClass ==> Protected Member in Final Class
+	AvoidReassigningParameters ==> Questionable Assignment
+	AvoidSynchronizedAtMethodLevel ==> Synchronized Method
+	AvoidThreadGroup ==> Disallow ThreadGroup Usage
+	AvoidThrowingNullPointerException ==> Thrown Exceptions
+	AvoidThrowingRawExceptionTypes ==> Thrown Exceptions
+	AvoidUsingNativeCode ==> Command Execution, Disallow Native Methods
+	AvoidUsingOctalValues ==> Avoid Octal Literals
+	BadComparison ==> Float Comparison
+	BigIntegerInstantiation ==> Use Available Constants
+	BooleanGetMethodName ==> Boolean Method Naming Convention
+	BooleanInstantiation ==> Preferred Expression
+	BrokenNullCheck ==> Dereferencing Null Pointer
+	ByteInstantiation ==> Use valueOf() to wrap primitives
+	ClassCastExceptionWithToArray ==> Inconsistent Conversion Using toArray()
+	ClassNamingConventions ==> Class Naming Convention
+	CloneThrowsCloneNotSupportedException ==> Override Clone Judiciously
+	CloseResource ==> Close Connection Where Created, Close Result Set Where Created, Close Statement Where Created
+	CompareObjectsWithEquals ==> Use equals() Rather Than ==
+	ConstructorCallsOverridableMethod ==> Constructors Only Invoke Final Methods
+	CyclomaticComplexity ==> Cyclomatic Complexity
+	DefaultLabelNotLastInSwitchStmt ==> Default Not Last in Switch
+	DefaultPackage ==> Avoid Package Scope
+	DoNotCallGarbageCollectionExplicitly ==> Runtime Method Usage, Runtime Method Usage
+	DoNotCallSystemExit ==> No Explicit Exit
+	DoNotExtendJavaLangError ==> Restricted Superclasses
+	DoNotThrowExceptionInFinally ==> Throw in Finally
+	DoNotUseThreads ==> Avoid Managing Threads
+	DontImportJavaLang ==> Import of Implicit Package
+	DontImportSun ==> Restricted Packages
+	DoubleCheckedLocking ==> Double Check Locking
+	DuplicateImports ==> Duplicate Import Declarations
+	EmptyCatchBlock ==> Empty Catch Clause
+	EmptyFinalizer ==> Empty Finalize Method
+	EmptyFinallyBlock ==> Empty Finally Clause
+	EmptyIfStmt ==> Empty If Statement
+	EmptyStatementNotInLoop ==> Empty Statement
+	EmptyStaticInitializer ==> Empty Initializer
+	EmptySwitchStatements ==> Empty Finally Clause
+	EmptySynchronizedBlock ==> Empty Synchronized Statement
+	EmptyTryBlock ==> Empty Try Statement
+	EmptyWhileStmt ==> Empty While Statement
+	EqualsNull ==> Use == to Compare With null
+	ExcessiveClassLength ==> Large Number of Methods
+	ExcessiveMethodLength ==> Source Length
+	ExcessiveParameterList ==> Large Number of Parameters
+	FinalFieldCouldBeStatic ==> Non-blank Final Instance Field
+	FinalizeDoesNotCallSuperFinalize ==> Invoke super.finalize() from within finalize()
+	FinalizeOverloaded ==> Finalize Method Definition
+	FinalizeShouldBeProtected ==> Finalize Should Not Be Public, Finalize Method Definition
+	ForLoopsMustUseBraces ==> Missing Block
+	IdempotentOperations ==> Repeated Assignment, Redundant Assignment
+	IfElseStmtsMustUseBraces ==> Missing Block
+	IfStmtsMustUseBraces ==> Missing Block
+	ImmutableField ==> Variable Should Be Final
+	ImportFromSamePackage ==> Import of Implicit Package
+	InefficientStringBuffering ==> Concatenation In Appending Method
+	InstantiationToGetClass ==> Avoid Instantiation to Get Class
+	InsufficientStringBufferDeclaration ==> Define Initial Capacity
+	IntegerInstantiation ==> Use valueOf() to wrap primitives
+	JUnit4SuitesShouldUseSuiteAnnotation ==> Use @RunWith and @SuiteClasses to build test suite 
+	JUnit4TestShouldUseAfterAnnotation ==> Use @After Annotation Rather than tearDown()
+	JUnit4TestShouldUseBeforeAnnotation ==> Use @Before Annotation Rather than setUp()
+	JUnit4TestShouldUseTestAnnotation ==> Use @Test Annotation for JUnit test
+	JUnitAssertionsShouldIncludeMessage ==> Missing Message in Assert
+	JUnitSpelling ==> JUnit Framework Checks
+	JUnitStaticSuite ==> JUnit Framework Checks
+	JUnitTestsShouldIncludeAssert ==> Missing Assert in JUnit Test Method
+	LocalVariableCouldBeFinal ==> Variable Should Be Final
+	LoggerIsNotStaticFinal ==> Non Static Logger
+	LongInstantiation ==> Use valueOf() to wrap primitives
+	LongVariable ==> Questionable Name
+	LooseCoupling ==> Declare As Interface
+	MDBAndSessionBeanNamingConvention ==> Message Beans, Session Beans
+	MethodArgumentCouldBeFinal ==> Variable Should Be Final
+	MethodNamingConventions ==> Method Naming Convention
+	MethodReturnsInternalArray ==> Mutability Of Arrays
+	MethodWithSameNameAsEnclosingClass ==> Method Naming Convention
+	MisleadingVariableName ==> Local Variable Naming Convention
+	MisplacedNullCheck ==> Unnecessary Null Check
+	MissingBreakInSwitch ==> Non-terminated Case Clause
+	MissingSerialVersionUID ==> Serializable Usage
+	MissingStaticMethodInNonInstantiatableClass ==> Missing static method in non-instantiable class
+	MoreThanOneLogger ==> More Than One Logger
+	NoPackage ==> Disallow Default Package
+	NonCaseLabelInSwitchStatement ==> Non-case Label in Switch
+	NonStaticInitializer ==> Avoid Instance Initializers
+	NonThreadSafeSingleton ==> Use Thread-safe Lazy Initialization, Double Check Locking
+	OnlyOneReturn ==> Multiple Return Statements
+	OptimizableToArrayCall ==> Inefficient use of toArray()
+	OverrideBothEqualsAndHashcode ==> Override both equals() and hashCode()
+	PackageCase ==> Package Naming Convention
+	ProperCloneImplementation ==> Clone Method Usage
+	ProperLogger ==> Non Static Logger
+	ReplaceEnumerationWithIterator ==> Do Not Implement Outdated Interfaces
+	ReplaceHashtableWithMap ==> Replace Synchronized Classes
+	ReplaceVectorWithList ==> Replace Synchronized Classes
+	ReturnEmptyArrayRatherThanNull ==> Avoid null Return Values
+	ReturnFromFinallyBlock ==> Return in Finally
+	ShortInstantiation ==> Use valueOf() to wrap primitives
+	ShortVariable ==> Questionable Name
+	SignatureDeclareThrowsException ==> Declared Exceptions
+	SimplifyBooleanExpressions ==> Equality Test with Boolean Literal
+	SimplifyBooleanReturns ==> Return Boolean Expression Value
+	SimplifyStartsWith ==> Use charAt() Rather Than startsWith()
+	StaticEJBFieldShouldBeFinal ==> Static Field Security
+	StringBufferInstantiationWithChar ==> Avoid StringBuffer Instantiation With Character Literal
+	StringInstantiation ==> String Created from Literal
+	StringToString ==> Unnecessary toString() Method Invocation
+	SuspiciousEqualsMethodName ==> Misspelled Method Name
+	SuspiciousHashcodeMethodName ==> Misspelled Method Name
+	SwitchStmtsShouldHaveDefault ==> Missing Default in Switch
+	SystemPrintln ==> Debugging Code
+	TooManyFields ==> Large Number of Fields
+	TooManyMethods ==> Large Number of Methods
+	UncommentedEmptyConstructor ==> Empty Method
+	UncommentedEmptyMethod ==> Empty Method
+	UnconditionalIfStatement ==> Constant Condition, Constant Conditional Expression
+	UnnecessaryConstructor ==> Unnecessary Default Constructor
+	UnnecessaryConversionTemporary ==> Temporary Object Creation
+	UnnecessaryFinalModifier ==> Unnecessary Final Method
+	UnnecessaryParentheses ==> Unnecessary Return Statement Parentheses
+	UnnecessaryReturn ==> Unnecessary Return
+	UnnecessaryWrapperObjectCreation ==> Efficient Expression
+	UnusedFormalParameter ==> Variable Usage
+	UnusedImports ==> Unnecessary Import Declarations
+	UnusedLocalVariable ==> Variable Usage
+	UnusedModifier ==> Obsolete Modifier Usage
+	UnusedPrivateField ==> Unused Field
+	UnusedPrivateMethod ==> Unused Method
+	UseArrayListInsteadOfVector ==> Replace Synchronized Classes
+	UseEqualsToCompareStrings ==> String Comparison
+	UseLocaleWithCaseConversions ==> Use locale-specific methods
+	UseNotifyAllInsteadOfNotify ==> Disallow Notify Usage
+	UseStringBufferForStringAppends ==> String Concatenation in Loop
+	UseStringBufferLength ==> Use StringBuffer length()
+	UselessOverridingMethod ==> Unnecessary Override
+	VariableNamingConventions ==> Constant Field Naming Convention, Local Variable Naming Convention, Instance Field Naming Convention, Static Field Naming Convention
+	WhileLoopsMustUseBraces ==> Missing Block
+Unimplemented foreign rules:
+	AbstractClassWithoutAnyMethod
+	AbstractNaming
+	AccessorClassGeneration
+	AtLeastOneConstructor
+	AvoidDecimalLiteralsInBigDecimalConstructor
+	AvoidDuplicateLiterals
+	AvoidFieldNameMatchingMethodName
+	AvoidFieldNameMatchingTypeName
+	AvoidFinalLocalVariable
+	AvoidMultipleUnaryOperators
+	AvoidRethrowingException
+	AvoidStringBufferField
+	AvoidThrowingNewInstanceOfSameException
+	AvoidUsingHardCodedIP
+	AvoidUsingShortType
+	AvoidUsingVolatile
+	BeanMembersShouldSerialize
+	BooleanInversion
+	CallSuperInConstructor
+	CheckResultSet
+	ClassWithOnlyPrivateConstructorsShouldBeFinal
+	CloneMethodMustImplementCloneable
+	CollapsibleIfStatements
+	ConfusingTernary
+	ConsecutiveLiteralAppends
+	CouplingBetweenObjects
+	DataflowAnomalyAnalysis
+	EmptyInitializer
+	EmptyMethodInAbstractClassShouldBeAbstract
+	ExceptionAsFlowControl
+	ExcessiveImports
+	ExcessivePublicCount
+	FinalizeOnlyCallsSuperFinalize
+	ForLoopShouldBeWhileLoop
+	InefficientEmptyStringCheck
+	JUnitUseExpected
+	JumbledIncrementer
+	LocalHomeNamingConvention
+	LocalInterfaceSessionNamingConvention
+	NPathComplexity
+	NcssConstructorCount
+	NcssMethodCount
+	NcssTypeCount
+	NullAssignment
+	PositionLiteralsFirstInComparisons
+	PreserveStackTrace
+	RemoteInterfaceNamingConvention
+	RemoteSessionInterfaceNamingConvention
+	ShortMethodName
+	SimpleDateFormatNeedsLocale
+	SimplifyBooleanAssertion
+	SimplifyConditional
+	SingularField
+	SuspiciousConstantFieldName
+	SuspiciousOctalEscape
+	SwitchDensity
+	TestClassWithoutTestCases
+	TooFewBranchesForASwitchStatement
+	TooManyStaticImports
+	UnnecessaryBooleanAssertion
+	UnnecessaryCaseChange
+	UnnecessaryLocalBeforeReturn
+	UnsynchronizedStaticDateFormatter
+	UnusedNullCheckInEquals
+	UseArraysAsList
+	UseAssertEqualsInsteadOfAssertTrue
+	UseAssertNullInsteadOfAssertTrue
+	UseAssertSameInsteadOfAssertTrue
+	UseCollectionIsEmpty
+	UseCorrectExceptionLogging
+	UseIndexOfChar
+	UseProperClassLoader
+	UseSingleton
+	UselessOperationOnImmutable
+	UselessStringValueOf
