@@ -46,7 +46,7 @@ Note: imports should be made in the same order as mentioned below:
  * Copy the file named as ".ruleset" from preferences into the project folder. 
  * Select the newly created project, Right click in Eclipse Project Explorer -> Properties -> PMD -> check the following two check boxes -> Enable PMD and  
 
-1. Eclipse Core preferences – Go to File -> Import -> Preferences and select preferences/EclipsePrefs.epf. These preferences contain :
+1. Eclipse Core preferences ï¿½ Go to File -> Import -> Preferences and select preferences/EclipsePrefs.epf. These preferences contain :
  * Findbugs Preferences
  * Java code style preferences
  * Java auto save Actions.
@@ -70,7 +70,12 @@ Notes Regarding How to suppress a warning using java comments :
    //CHECKSTYLE stop magic number check
    The code block should end with following comment to resume magic number check :
    //CHECKSTYLE resume magic number check
- * More such comment pattern can be added by editing file - preferences/checkstyle.xml (See module tag marked with name="SuppressionCommentFilter")
+ * To switch off and switch off a specific rule by its rule-name following syntax can be used :
+   
+     CHECKSTYLE.OFF: RuleName
+   
+     CHECKSTYLE.ON: RuleName 
+ * More such comment pattern can be added by editing file - preferences/checkstyle.xml.
 
 1. Findbugs rules can be suppressed through java annotation as follows :
    @edu.umd.cs.findbugs.annotations.SuppressWarnings(value = "DM_DEFAULT_ENCODING") 
