@@ -24,6 +24,7 @@ IF "%OPTS2%"=="" set OPTS2=-application org.eclipse.equinox.p2.director
 IF "%OPTS3%"=="" set OPTS3=-destination %DEST_DIR%
 IF "%OPTS4%"=="" set OPTS4=-bundlepool %DEST_DIR%
 IF "%OPTS5%"=="" set OPTS5=-p2.os win32 -p2.ws win32 -p2.arch x86
+IF NOT EXIST .\director jar xf director_latest.zip
 
 %P2_DIRECTOR_CMD% %OPTS1% %OPTS2% -clean ^
 -repository http://download.eclipse.org/eclipse/updates/3.8-M-builds/ ^
