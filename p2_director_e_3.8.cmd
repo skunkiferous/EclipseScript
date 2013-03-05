@@ -3,7 +3,7 @@ rem ----------------------------------------------------------------
 rem edit following Path variables.
 rem ----------------------------------------------------------------
 IF "%JAVA_HOME%"==""	set JAVA_HOME=C:\Progra~1\Java\jdk1.7.0_10
-IF "%DEST_DIR%"==""	set DEST_DIR=C:\work\eclipse_3_8_2
+IF "%DEST_DIR%"==""	set DEST_DIR=C:\work\eclipse_3_8_5
 IF "%ECLIPSE_HOME%"=="" set ECLIPSE_HOME=%DEST_DIR%
 
 rem ----------------------------------------------------------------
@@ -113,10 +113,11 @@ org.eclipse.egit.feature.group,org.eclipse.egit.psf.feature.group,org.eclipse.eg
 -roaming %OPTS5%
 
 %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://download.eclipse.org/technology/m2e/releases,http://download.eclipse.org/releases/indigo,^
-https://repository.sonatype.org/content/repositories/forge-sites/m2eclipse-tycho/0.6.0/N/0.6.0.201112050222 ^
--installIU org.eclipse.m2e.feature.feature.group,^
-org.eclipse.m2e.logback.feature.feature.group,org.sonatype.tycho.m2e.feature.feature.group ^
+-repository http://download.eclipse.org/technology/m2e/releases,http://download.eclipse.org/releases/staging/ ^
+-installIU org.eclipse.m2e.sdk.feature.feature.group,^
+org.eclipse.m2e.feature.feature.group,^
+org.eclipse.m2e.logback.feature.feature.group,org.eclipse.m2e.site,org.eclipse.m2e.site.product,org.eclipse.m2e.site,^
+org.eclipse.wst.xsd.core,org.eclipse.wst.xml.ui ^
 -tag m2e %OPTS3% %OPTS4% ^
 -roaming %OPTS5%
 
@@ -270,14 +271,8 @@ org.polarion.eclipse.team.svn.connector.svnkit17.feature.group ^
 
 %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
 -repository http://bndtools-updates.s3.amazonaws.com/ ^
--installIU bndtools.feature.feature.group ^
--tag bndtools %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
--roaming %OPTS5%
-
-
-%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://bndtools-updates.s3.amazonaws.com/ ^
--installIU bndtools.feature.feature.group ^
+-installIU bndtools.main.feature.feature.group,bndtools.ace.feature.feature.group,^
+bndtools.jarviewer.feature.feature.group ^
 -tag bndtools %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
 -roaming %OPTS5%
 
