@@ -100,7 +100,7 @@ org.eclipse.jem.util,org.eclipse.wst.common.emf,org.eclipse.actf.visualization.f
 -roaming %OPTS5%
 
 %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://download.eclipse.org/releases/juno ^
+-repository http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/juno ^
 -installIU org.eclipse.papyrus.sdk.feature.feature.group ^
 -tag papyrus %OPTS3% %OPTS4% ^
 -roaming %OPTS5%
