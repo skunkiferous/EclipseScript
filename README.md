@@ -98,6 +98,19 @@ Using template.
 6. Dictionary file present in this director should be manually Applied.
 7. Now all the projects can be imported (File -> Import -> Existing Projects into workspace -> (Select Root Directory as newly created workspace folder) -> Finish.
 
+Converting a Jar as OSGi bundle Using BNDTools Eclispe plugin.
+-------------------------------------------------------------
+* Make sure BNDTools plugin is installed.
+* In an existing eclipse workspace, open Eclipse preferences Select 'BNDTools OSGi' and click check now and follow the steps to create the 'cnf' project.
+* Go to File -> New -> Wrap JAR as OSGi Bundle Project -> Add External -> Next -> Add the required project in Selected Packages ->
+  Give a Project Name - > Finish.
+* This step will create a project of BND nature.
+* Now edit Bnd.bnd and assign a version number to the Bundle and Save.
+* This step should generate a jar file under 'generated' folder of the newly created project. Name of this jar will be same as the name of the project.
+* Open the jar in Eclipse jar viewer and check META-INF/MANIFEST.MF
+
+
+
 TODO/KNOWN ISSUES
 -----------------
 * p2_director_e_4.2.cmd is a script for eclipse Juno latest release this is not updated with ALL the plugins.
