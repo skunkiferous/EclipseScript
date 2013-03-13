@@ -102,7 +102,7 @@ Converting a Jar as OSGi bundle Using BNDTools Eclispe plugin.
 -------------------------------------------------------------
 * Make sure BNDTools plugin is installed.
 * In an existing eclipse workspace, open Eclipse preferences Select 'BNDTools OSGi' and click check now and follow the steps to create the 'cnf' project.
-* Go to File -> New -> Wrap JAR as OSGi Bundle Project -> Add External -> Next -> Add the required project in Selected Packages ->
+* Go to File -> New -> Wrap JAR as OSGi Bundle Project -> Add External -> Next -> Add the required packages as 'Selected Packages' ->
   Give a Project Name - > Finish.
 * This step will create a project of BND nature.
 * Now edit Bnd.bnd and assign a version number to the Bundle and Save.
