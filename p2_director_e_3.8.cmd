@@ -3,7 +3,7 @@ rem ----------------------------------------------------------------
 rem edit following Path variables.
 rem ----------------------------------------------------------------
 IF "%JAVA_HOME%"==""	set JAVA_HOME=C:\Progra~1\Java\jdk1.7.0_10
-IF "%DEST_DIR%"==""	set DEST_DIR=C:\work\eclipse_3_8_6
+IF "%DEST_DIR%"==""	set DEST_DIR=C:\work\eclipse_3_8_8
 IF "%ECLIPSE_HOME%"=="" set ECLIPSE_HOME=%DEST_DIR%
 
 rem ----------------------------------------------------------------
@@ -107,6 +107,13 @@ org.eclipse.jem.util,org.eclipse.wst.common.emf,org.eclipse.actf.visualization.f
 -roaming %OPTS5%
 
 %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://download.eclipse.org/releases/staging/ ^
+-installIU org.eclipse.wst.xsd.core,org.eclipse.wst.xml.ui,org.eclipse.jem.util,org.eclipse.equinox.p2.ui.discovery,^
+org.eclipse.wst.common.emf,org.eclipse.equinox.internal.p2.discovery.compatibility,  ^
+-tag m2e %OPTS3% %OPTS4% ^
+-roaming %OPTS5%
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
 -repository http://download.eclipse.org/egit/updates ^
 -installIU ^
 org.eclipse.egit.feature.group,org.eclipse.egit.source.feature.group,org.eclipse.egit.mylyn.feature.group,org.eclipse.egit.import.feature.group ^
@@ -114,11 +121,17 @@ org.eclipse.egit.feature.group,org.eclipse.egit.source.feature.group,org.eclipse
 -roaming %OPTS5%
 
 %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://download.eclipse.org/technology/m2e/releases,http://download.eclipse.org/releases/staging/,http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.6.0/N/0.6.0.201207302152/ ^
+-repository http://download.eclipse.org/technology/m2e/releases ^
 -installIU org.eclipse.m2e.sdk.feature.feature.group,^
 org.eclipse.m2e.feature.feature.group,^
-org.eclipse.m2e.logback.feature.feature.group,org.eclipse.m2e.site,org.eclipse.m2e.site.product,org.eclipse.m2e.site,^
-org.eclipse.wst.xsd.core,org.eclipse.wst.xml.ui,org.sonatype.tycho.m2e.feature.feature.group,org.sonatype.tycho.m2e.feature.feature.group ^
+org.eclipse.m2e.logback.feature.feature.group,org.eclipse.m2e.site.product,org.eclipse.m2e.site ^
+-tag m2e %OPTS3% %OPTS4% ^
+-roaming %OPTS5% -followreferences
+
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.6.0/N/0.6.0.201207302152/ ^
+-installIU org.sonatype.tycho.m2e.feature.feature.group ^
 -tag m2e %OPTS3% %OPTS4% ^
 -roaming %OPTS5%
 

@@ -73,16 +73,16 @@
       <property name="tokens" value="LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_IF,LITERAL_FOR,LITERAL_TRY,LITERAL_WHILE,STATIC_INIT"/>
     </module>
     <module name="LeftCurly"/>
-    <module name="NeedBraces">
-      <property name="severity" value="ignore"/>
-      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
-    </module>
+    <module name="NeedBraces"/>
     <module name="RightCurly"/>
     <module name="AvoidInlineConditionals">
       <property name="severity" value="ignore"/>
       <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     </module>
-    <module name="DoubleCheckedLocking"/>
+    <module name="DoubleCheckedLocking">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
     <module name="EmptyStatement">
       <property name="severity" value="info"/>
     </module>
@@ -141,7 +141,10 @@
       <property name="format" value="^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$"/>
       <message key="name.invalidPattern" value="Name ''{0}'' must match pattern ''ALL CAPS''."/>
     </module>
-    <module name="GenericWhitespace"/>
+    <module name="GenericWhitespace">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
     <module name="CovariantEquals"/>
     <module name="DefaultComesLast"/>
     <module name="DeclarationOrder">
@@ -240,7 +243,7 @@
   <module name="StrictDuplicateCode">
     <property name="severity" value="ignore"/>
     <property name="min" value="8"/>
-    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="info"/>
   </module>
   <module name="SuppressWithNearbyCommentFilter">
     <property name="commentFormat" value="CHECKSTYLE IGNORE FOR NEXT (\d+) LINES"/>

@@ -96,3 +96,4 @@ changelisteneradapter
 changelistener
 validator
 fallback
+regex
