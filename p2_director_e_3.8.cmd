@@ -3,7 +3,7 @@ rem ----------------------------------------------------------------
 rem edit following Path variables.
 rem ----------------------------------------------------------------
 IF "%JAVA_HOME%"==""	set JAVA_HOME=C:\Progra~1\Java\jdk1.7.0_10
-IF "%DEST_DIR%"==""	set DEST_DIR=C:\work\eclipse_3_8_8
+IF "%DEST_DIR%"==""	set DEST_DIR=C:\work\eclipse_3_8_10
 IF "%ECLIPSE_HOME%"=="" set ECLIPSE_HOME=%DEST_DIR%
 
 rem ----------------------------------------------------------------
@@ -91,49 +91,21 @@ org.eclipse.recommenders.feature.3rd.rcp.nonorbit.feature.group ^
 -tag andrei %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
 -roaming %OPTS5%
 
-%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://download.eclipse.org/releases/juno ^
--installIU ^
-org.eclipse.emf.sdk.feature.group,org.eclipse.emf.facet.sdk.feature.feature.group,^
-org.eclipse.modisco.sdk.feature.feature.group,org.eclipse.xpand.sdk.feature.group,org.eclipse.emf.importer,^
-org.eclipse.jem.util,org.eclipse.wst.common.emf,org.eclipse.actf.visualization.feature.group ^
--tag emf %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
--roaming %OPTS5%
+rem %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+rem -repository http://download.eclipse.org/releases/juno ^
+rem -installIU ^
+rem org.eclipse.emf.sdk.feature.group,org.eclipse.emf.facet.sdk.feature.feature.group,^
+rem org.eclipse.modisco.sdk.feature.feature.group,org.eclipse.xpand.sdk.feature.group,org.eclipse.emf.importer,^
+rem org.eclipse.jem.util,org.eclipse.wst.common.emf ^
+rem -tag emf %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
+rem -roaming %OPTS5%
 
 %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/juno ^
+-repository http://download.eclipse.org/releases/juno/201303010900 ^
 -installIU org.eclipse.papyrus.sdk.feature.feature.group ^
 -tag papyrus %OPTS3% %OPTS4% ^
--roaming %OPTS5%
-
-%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://download.eclipse.org/releases/staging/ ^
--installIU org.eclipse.wst.xsd.core,org.eclipse.wst.xml.ui,org.eclipse.jem.util,org.eclipse.equinox.p2.ui.discovery,^
-org.eclipse.wst.common.emf,org.eclipse.equinox.internal.p2.discovery.compatibility,  ^
--tag m2e %OPTS3% %OPTS4% ^
--roaming %OPTS5%
-
-%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://download.eclipse.org/egit/updates ^
--installIU ^
-org.eclipse.egit.feature.group,org.eclipse.egit.source.feature.group,org.eclipse.egit.mylyn.feature.group,org.eclipse.egit.import.feature.group ^
--tag egit %OPTS3% %OPTS4% ^
--roaming %OPTS5%
-
-%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://download.eclipse.org/technology/m2e/releases ^
--installIU org.eclipse.m2e.sdk.feature.feature.group,^
-org.eclipse.m2e.feature.feature.group,^
-org.eclipse.m2e.logback.feature.feature.group,org.eclipse.m2e.site.product,org.eclipse.m2e.site ^
--tag m2e %OPTS3% %OPTS4% ^
 -roaming %OPTS5% -followreferences
 
-
-%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.6.0/N/0.6.0.201207302152/ ^
--installIU org.sonatype.tycho.m2e.feature.feature.group ^
--tag m2e %OPTS3% %OPTS4% ^
--roaming %OPTS5%
 
 %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
 -repository ^
@@ -271,11 +243,6 @@ org.polarion.eclipse.team.svn.connector.svnkit17.feature.group ^
 -tag subversive %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
 -roaming %OPTS5%
 
-%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
--repository http://download.eclipse.org/releases/juno ^
--installIU org.eclipse.mylyn.github.feature.feature.group ^
--tag github %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
--roaming %OPTS5%
 
 %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
 -repository http://www.wickedshell.net/updatesite ^
@@ -303,3 +270,36 @@ P5ExporterFeature.feature.group ^
 -tag proclipsing %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
 -roaming %OPTS5%
 
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://download.eclipse.org/egit/updates ^
+-installIU ^
+org.eclipse.egit.feature.group,org.eclipse.egit.source.feature.group,org.eclipse.egit.mylyn.feature.group,org.eclipse.egit.import.feature.group ^
+-tag egit %OPTS3% %OPTS4% ^
+-roaming %OPTS5%
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://download.eclipse.org/releases/staging/,http://download.eclipse.org/releases/juno/201303010900 ^
+-installIU org.eclipse.wst.xsd.core,org.eclipse.wst.xml.ui,org.eclipse.jem.util,org.eclipse.equinox.p2.ui.discovery,^
+org.eclipse.wst.common.emf  ^
+-tag m2e %OPTS3% %OPTS4% ^
+-roaming %OPTS5%
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://download.eclipse.org/releases/juno/201303010900 ^
+-installIU org.eclipse.equinox.p2.discovery.compatibility  ^
+-tag m2e %OPTS3% %OPTS4% ^
+-roaming %OPTS5%
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://download.eclipse.org/technology/m2e/releases/1.3  ^
+-installIU org.eclipse.m2e.sdk.feature.feature.group,^
+org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group  ^
+-tag m2e %OPTS3% %OPTS4% ^
+-roaming %OPTS5% -followreferences
+
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.6.0/N/0.6.0.201207302152/ ^
+-installIU org.sonatype.tycho.m2e.feature.feature.group ^
+-tag m2e %OPTS3% %OPTS4% ^
+-roaming %OPTS5%

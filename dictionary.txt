@@ -97,3 +97,4 @@ changelistener
 validator
 fallback
 regex
+primitiveable
