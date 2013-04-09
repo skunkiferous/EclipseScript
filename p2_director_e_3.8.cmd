@@ -303,3 +303,9 @@ org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.gr
 -installIU org.sonatype.tycho.m2e.feature.feature.group ^
 -tag m2e %OPTS3% %OPTS4% ^
 -roaming %OPTS5%
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://www.wdev91.com/update/ ^
+-installIU com.wdev91.eclipse.copyright.feature.feature.group ^
+-tag copyright %OPTS3% %OPTS4% ^
+-roaming %OPTS5%
