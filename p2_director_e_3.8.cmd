@@ -100,6 +100,7 @@ rem org.eclipse.jem.util,org.eclipse.wst.common.emf ^
 rem -tag emf %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
 rem -roaming %OPTS5%
 
+
 %ECLIPSE_EXE% %OPTS1% %OPTS2% ^
 -repository http://download.eclipse.org/releases/juno/201303010900 ^
 -installIU org.eclipse.papyrus.sdk.feature.feature.group ^
@@ -309,3 +310,16 @@ org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.gr
 -installIU com.wdev91.eclipse.copyright.feature.feature.group ^
 -tag copyright %OPTS3% %OPTS4% ^
 -roaming %OPTS5%
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://download.eclipse.org/releases/juno ^
+-installIU org.eclipse.modisco.sdk.feature.feature.group ^
+-tag modisco %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
+-roaming %OPTS5%
+
+%ECLIPSE_EXE% %OPTS1% %OPTS2% ^
+-repository http://www.objectaid.net/update/site.xml ^
+-installIU org.apache.batik.feature.group,com.objectaid.uml.feature.group,com.objectaid.uml.addon.feature.group,com.objectaid.uml.seq.feature.group ^
+-tag ObjectAidUML %OPTS3% -profileProperties org.eclipse.update.install.features=true %OPTS4% ^
+-roaming %OPTS5%
+
